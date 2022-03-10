@@ -1,45 +1,47 @@
-let age = 25;
-let year = 2022;
+//  Modern JS tutorial - Syntax basics & types https://www.youtube.com/watch?v=FhguwBJeqWs 
+
+// let age = 25;
+// let year = 2022;
 
 // log things to console
-console.log(age, year);
+// console.log(age, year);
 
-age = 30;
-console.log(age);
+// age = 30;
+// console.log(age);
 
-const points = 100;
+// const points = 100;
 // points = 50; cannot do this, can't revalue the const variable
-console.log(points);
+// console.log(points);
 
-var score = 75;
-console.log(score);
+// var score = 75;
+// console.log(score);
 
-// strings
-console.log('hello, world');
+// // strings
+// console.log('hello, world');
 
-let email = 'mario@email.co.fi'
-console.log(email);
+// let email = 'mario@email.co.fi'
+// console.log(email);
 
 // string concatenation
-let firstName = 'Brandon';
-let lastName = 'Sanderson';
+// let firstName = 'Brandon';
+// let lastName = 'Sanderson';
 
-let fullName = firstName + ' ' + lastName;
-console.log(fullName);
+// let fullName = firstName + ' ' + lastName;
+// console.log(fullName);
 
 //getting characters
-console.log(fullName[2]);
+// console.log(fullName[2]);
 
 // string length
-console.log(fullName.length);
+// console.log(fullName.length);
 
 // string methods
-console.log(fullName.toUpperCase());
+// console.log(fullName.toUpperCase());
 //let result = fullName.toLowerCase();
 //console.log(result);
 
-let index = email.indexOf('@');
-console.log(index);
+// let index = email.indexOf('@');
+// console.log(index);
 
 // COMMON STRING METHODS
 
@@ -60,14 +62,14 @@ console.log(index);
 
 // NUMBERS
 
-let radius = 10;
-const pi = 3.14;
+// let radius = 10;
+// const pi = 3.14;
 
 // console.log(radius, pi);
 
 // MATH OPERATORS +, -, *, /, **, %
 
-console.log(10/2);
+// console.log(10/2);
 
 // let result = radius % 3;
 // let result = pi * radius**2;
@@ -101,9 +103,9 @@ console.log(10/2);
 
 //TEMPLATE STRINGS
 
-const title = 'Best reads of 2019';
-const author = 'Mario';
-const likes = 30;
+// const title = 'Best reads of 2019';
+// const author = 'Mario';
+// const likes = 30;
 
 // concatenation way
 // let result = 'The blog called ' + title + ' by ' + author + ' has ' + likes + ' likes';
@@ -117,18 +119,18 @@ const likes = 30;
 
 
 // creating html templates
-let html = `
-    <h2>${title}</h2>
-    <p>${author}</p>
-    <span>This blog has ${likes} likes</span>
-`;
+// let html = `
+//     <h2>${title}</h2>
+//     <p>${author}</p>
+//     <span>This blog has ${likes} likes</span>
+// `;
 
-console.log(html);
+// console.log(html);
 
 
 // ARRAYS
 
-let ninjas = ['shaun', 'ryu', 'chun-li'];
+// let ninjas = ['shaun', 'ryu', 'chun-li'];
 
 // ninjas[1] = 'ken';
 // console.log(ninjas[1]);
@@ -149,6 +151,75 @@ let ninjas = ['shaun', 'ryu', 'chun-li'];
 
 // let result = ninjas.concat(['ken','crystal']);
 
-let result =ninjas.push('ken');
-result = ninjas.pop();
-console.log(result);
+// let result =ninjas.push('ken');
+// result = ninjas.pop();
+
+// console.log(result);
+
+// let age = null;
+
+// console.log(age, age + 3, `the age is ${age}`);
+
+// !!! BOOLEANS !!!
+
+// booleans & comparisons
+// console.log('true', 'false');
+
+// !!! methods can return booleans !!!
+// let email = 'luigi@thenetninja.co.uk';
+// let names = ['mario', 'luigi', 'toad'];
+
+// // let result = email.includes('!');
+// let result = names.includes('bowser');
+
+// console.log(result);
+
+// !!! comparison operators !!!
+// let age = 25;
+
+// console.log(age == 25);
+// console.log(age == 30);
+// console.log(age != 30);
+// console.log(age > 20);
+// console.log(age < 20);
+// console.log(age <= 25);
+// console.log(age >= 25);
+
+// let name = 'shaun';
+
+// console.log(name == 'shaun');
+// console.log(name == 'Shaun');
+// console.log(name > 'crystal');
+// console.log(name > 'Shaun');
+// console.log(name > 'Crystal');
+
+let age = 25;
+
+// !!! loose comparison (different types can still be equal) !!!
+
+// console.log(age == '25');
+// console.log(age == 25);
+// console.log(age != 25);
+// console.log(age != '25');
+
+// !!! strict comparison (different types cannot be equal) !!!
+
+console.log(age === 25);        // TRUE
+console.log(age === '25');      // FALSE
+console.log(age !== 25);        // FALSE
+console.log(age !== '25');      // TRUE
+
+// !!! type conversation !!!
+let score = '100';
+
+// score = Number(score);
+// console.log(score + 1);
+// console.log(typeof score);
+
+// let result = Number('hello');    // NaN
+// let result = String(50);
+// let result = Boolean(0);
+let result = Boolean('');
+
+console.log(result, typeof result);
+
